@@ -5,17 +5,17 @@ var __path = process.cwd(),
 // Connection URL
 var url = 'https://zahirr-web.herokuapp.com';
 try {
-if(url == 'https://zahirr-web.herokuapp.com') throw console.log(color('Cek konfigurasi database, var url belum diisi','red'));
+if(url == 'https://zahirr-web.herokuapp.com') throw console.log(color('Cek konfigurasi database, var url ne niku dereng diisi maszehh','red'));
 } catch (e) {
 	return;
 	}
 var db = monk(url);
 
 db.then(() => {
-  console.log(color('Connected correctly to server, ZhirrrGanss','green'))
+  console.log(color('Connected correctly to server, ArifhtGanss','green'))
 })
 .catch ((e) => {
-	console.log(color('Error : '+ e +'\n\nGagal connect ke database, \ncek configurasi database apakah Connection URL sudah benar','red'))
+	console.log(color('Error : '+ e +'\n\nGagal connect ke database, \ncek configurasi database Connection URL nipun pun bener nopo dereng niki','red'))
 	})
 
 
