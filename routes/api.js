@@ -3,12 +3,12 @@ __path = process.cwd()
 var express = require('express');
 var db = require(__path + '/database/db');
 try {
-var zahirr = db.get("zahirr");
+var zahirr = db.get("arifhidayat");
 } catch (e) {
 	console.log('')
 }
 
-var creator = "@NYXTod"
+var creator = "@arifhidayat"
 var ytdl = require('ytdl-core');
 var ytpl = require('ytpl');
 var secure = require('ssl-express-www');
@@ -139,7 +139,7 @@ loghandler = {
     }
 }
 
-const listkey = ["ZBOTZZZZ", "NYXTODGANZ"];
+const listkey = ["ARIFUSERBOT", "ARIFHIDAYAT"];
 //router.use(favicon(__path + "/views/logo.ico"));
 
 var len = 15
@@ -157,7 +157,7 @@ var len = 15
             randomlagi += arr[Math.floor(Math.random() * arr.length)];
         }
 
-        var randomTextNumber = random+randomlagi+'---------ZahirGanteng'+'ZHIRRR--GANS';
+        var randomTextNumber = random+randomlagi+'---------ArifGanteng'+'HIDAYAT--GANS';
         
 router.get('/cekapikey', async (req, res, next) => {
 	var apikeyInput = req.query.apikey
@@ -203,7 +203,7 @@ router.get('/addapikey', (req, res, next) => {
 
     if (!apikey) return res.json(loghandler.notparam)
     if (!(status && apikeyInput && email && nomorhp && name && age && country && exp)) return res.json(loghandler.notAddApiKey)
-    if (apikey != 'ZBOTZZZZ') return res.json(loghandler.invalidKey)
+    if (apikey != 'ARIFHIDAYAT') return res.json(loghandler.invalidKey)
 
     try {
         zahirr.insert({
@@ -242,7 +242,7 @@ router.get('/remove', (req, res, next) => {
 
     if (!apikey) return res.json(loghandler.notparam)
     if (!(status && apikeyInput && email && nomorhp && name && age && country && exp)) return res.json(loghandler.notAddApiKey)
-    if (apikey != 'ZBOTZZZZ') return res.json(loghandler.invalidKey)
+    if (apikey != 'ARIFHIDAYAT') return res.json(loghandler.invalidKey)
 
     try {
         zahirr.remove({
@@ -287,14 +287,14 @@ router.get('/china', async (req, res, next) => {
 router.get('/cewe/vietnam', async (req, res, next) => {
         var apikeyInput = req.query.apikey
 	if(!apikeyInput) return res.json(loghandler.notparam)	
-	if (apikeyInput != 'ZBOTZZZZ')  return res.json(loghandler.invalidKey)
+	if (apikeyInput != 'ARIFUSERBOT')  return res.json(loghandler.invalidKey)
        fetch(encodeURI(`https://raw.githubusercontent.com/NYXTodofc/Asupan/main/cecan/vietnam.json`))
         .then(response => response.json())
         .then(data => {
         var result = data;
         var result = data[Math.floor(Math.random() * data.length)];
              res.json({
-             	author: 'NYXTod',
+             	author: 'HIDAYAT',
                  result
              })
          })
@@ -305,14 +305,14 @@ router.get('/cewe/vietnam', async (req, res, next) => {
 router.get('/cewe/thailand', async (req, res, next) => {
         var apikeyInput = req.query.apikey
 	if(!apikeyInput) return res.json(loghandler.notparam)	
-	if (apikeyInput != 'ZBOTZZZZ')  return res.json(loghandler.invalidKey)
+	if (apikeyInput != 'ARIFUSERBOT')  return res.json(loghandler.invalidKey)
        fetch(encodeURI(`https://raw.githubusercontent.com/NYXTodofc/Asupan/main/cecan/thailand.json`))
         .then(response => response.json())
         .then(data => {
         var result = data;
         var result = data[Math.floor(Math.random() * data.length)];
              res.json({
-             	author: 'NYXTod',
+             	author: 'HIDAYAT',
                  result
              })
          })
@@ -323,14 +323,14 @@ router.get('/cewe/thailand', async (req, res, next) => {
 router.get('/cewe/china', async (req, res, next) => {
         var apikeyInput = req.query.apikey
 	if(!apikeyInput) return res.json(loghandler.notparam)	
-	if (apikeyInput != 'ZBOTZZZZ')  return res.json(loghandler.invalidKey)
+	if (apikeyInput != 'ARIFUSERBOT')  return res.json(loghandler.invalidKey)
        fetch(encodeURI(`https://raw.githubusercontent.com/NYXTodofc/Asupan/main/cecan/china.json`))
         .then(response => response.json())
         .then(data => {
         var result = data;
         var result = data[Math.floor(Math.random() * data.length)];
              res.json({
-             	author: 'NYXTod',
+             	author: 'HIDAYAT',
                  result
              })
          })
@@ -341,14 +341,14 @@ router.get('/cewe/china', async (req, res, next) => {
 router.get('/cewe/indonesia', async (req, res, next) => {
         var apikeyInput = req.query.apikey
 	if(!apikeyInput) return res.json(loghandler.notparam)	
-	if (apikeyInput != 'ZBOTZZZZ')  return res.json(loghandler.invalidKey)
+	if (apikeyInput != 'ARIFUSERBOT')  return res.json(loghandler.invalidKey)
        fetch(encodeURI(`https://raw.githubusercontent.com/NYXTodofc/Asupan/main/cecan/indonesia.json`))
         .then(response => response.json())
         .then(data => {
         var result = data;
         var result = data[Math.floor(Math.random() * data.length)];
              res.json({
-             	author: 'NYXTod',
+             	author: 'HIDAYAT',
                  result
              })
          })
@@ -359,14 +359,14 @@ router.get('/cewe/indonesia', async (req, res, next) => {
 router.get('/cewe/korea', async (req, res, next) => {
         var apikeyInput = req.query.apikey
 	if(!apikeyInput) return res.json(loghandler.notparam)	
-	if (apikeyInput != 'ZBOTZZZZ')  return res.json(loghandler.invalidKey)
+	if (apikeyInput != 'ARIFUSERBOT')  return res.json(loghandler.invalidKey)
        fetch(encodeURI(`https://raw.githubusercontent.com/NYXTodofc/Asupan/main/cecan/korea.json`))
         .then(response => response.json())
         .then(data => {
         var result = data;
         var result = data[Math.floor(Math.random() * data.length)];
              res.json({
-             	author: 'NYXTod',
+             	author: 'HIDAYAT',
                  result
              })
          })
